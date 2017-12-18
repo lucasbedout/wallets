@@ -11,7 +11,7 @@ cp .env.example .env
 Just create a MySQL database and update the .env with your MySQL config, your API keys and your investment and then run
 
 ```
-yarn
+yarn && adonis migration:run
 ```
 
 ## Usage
