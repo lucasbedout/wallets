@@ -1,31 +1,31 @@
-# Adonis fullstack application
+# Crypto wallets
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+## Getting started
 
-1. Bodyparser
-2. Session
-3. Authentication
-4. Web security middleware
-5. CORS
-6. Edge template engine
-7. Lucid ORM
-8. Migrations and seeds
+To install it's easy 🚀
 
-## Setup
-
-Use the adonis command to install the blueprint
-
-```bash
-adonis new yardstick
+```
+cp .env.example .env
 ```
 
-or manually clone the repo and then run `npm install`.
+Just create a MySQL database and update the .env with your MySQL config, your API keys and your investment and then run
 
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
 ```
+yarn
+```
+
+## Usage
+
+To run the scheduler and update the wallets every minute run 
+
+```
+adonis run:scheduler
+```
+
+To run the API and plug the frontend 
+
+```
+adonis serve --dev
+```
+
+💸💸💸💸💸💸
