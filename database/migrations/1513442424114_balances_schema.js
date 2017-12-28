@@ -8,6 +8,7 @@ class BalancesSchema extends Schema {
       table.increments()
       table.json('wallets')
       table.decimal('total')
+      table.decimal('profit')
       table.timestamps()
     })
   }

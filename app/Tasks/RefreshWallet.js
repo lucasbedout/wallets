@@ -37,7 +37,7 @@ class RefreshWallet {
         total,
         profit: total - Env.get('INVESTMENT')
       })
-    })
+    }).catch(err => console.log('ERROR FETCHING BALANCES'))
   }
 
 }

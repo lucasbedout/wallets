@@ -14,6 +14,9 @@ class Coinbase extends Platform {
     return new Promise((resolve, reject) => {
       const balances = {}
       this.client.getAccounts({}, (err, accounts) => {
+        if (err || !accounts) {
+          return resolve({});
+        }
         accounts.filter(acct => acct.native_balance.amount > 0).forEach(acct => {
           balances[acct.currency] = parseFloat(acct.native_balance.amount)
         })
